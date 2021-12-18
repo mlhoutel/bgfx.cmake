@@ -64,13 +64,13 @@ include( cmake/bx.cmake )
 include( cmake/bimg.cmake )
 include( cmake/bgfx.cmake )
 
-if( BGFX_BUILD_TOOLS )
+# if( BGFX_BUILD_TOOLS )
 	include( cmake/tools.cmake )
-endif()
+# endif()
 
-if( BGFX_BUILD_TOOLS OR BGFX_BUILD_EXAMPLES )
+# if( BGFX_BUILD_TOOLS OR BGFX_BUILD_EXAMPLES )
 	include( cmake/examples.cmake )
-endif()
+# endif()
 
 if( BGFX_INSTALL )
 	include(GNUInstallDirs)
@@ -154,7 +154,7 @@ if( BGFX_INSTALL )
 	)
 
 	# install tools
-	if( BGFX_BUILD_TOOLS )
+	# if( BGFX_BUILD_TOOLS )
 		install( TARGETS shaderc
 			EXPORT "${TARGETS_EXPORT_NAME}"
 			DESTINATION "${CMAKE_INSTALL_BINDIR}" )
@@ -170,7 +170,7 @@ if( BGFX_INSTALL )
 		install( TARGETS texturev
 			EXPORT "${TARGETS_EXPORT_NAME}"
 			DESTINATION "${CMAKE_INSTALL_BINDIR}" )
-	endif()
+	# endif()
 
 	# install examples
 	if( BGFX_BUILD_EXAMPLES AND BGFX_INSTALL_EXAMPLES )
