@@ -58,9 +58,9 @@ include( cmake/bx.cmake )
 include( cmake/bimg.cmake )
 include( cmake/bgfx.cmake )
 
-if( BGFX_BUILD_TOOLS )
+# if( BGFX_BUILD_TOOLS )
 	include( cmake/tools.cmake )
-endif()
+# endif()
 
 include( cmake/examples.cmake )
 
